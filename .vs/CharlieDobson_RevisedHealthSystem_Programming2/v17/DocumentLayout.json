@@ -3,12 +3,16 @@
   "WorkspaceRootPath": "C:\\Charlie\u0027s Coding Assigments\\CharlieDobson_RevisedHealthSystem_Programming2\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{2A945077-5621-49F1-9E4A-2118EACBCF2B}|CharlieDobson_RevisedHealthSystem_Programming2\\CharlieDobson_RevisedHealthSystem_Programming2.csproj|c:\\charlie\u0027s coding assigments\\charliedobson_revisedhealthsystem_programming2\\charliedobson_revisedhealthsystem_programming2\\health.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2A945077-5621-49F1-9E4A-2118EACBCF2B}|CharlieDobson_RevisedHealthSystem_Programming2\\CharlieDobson_RevisedHealthSystem_Programming2.csproj|solutionrelative:charliedobson_revisedhealthsystem_programming2\\health.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{2A945077-5621-49F1-9E4A-2118EACBCF2B}|CharlieDobson_RevisedHealthSystem_Programming2\\CharlieDobson_RevisedHealthSystem_Programming2.csproj|c:\\charlie\u0027s coding assigments\\charliedobson_revisedhealthsystem_programming2\\charliedobson_revisedhealthsystem_programming2\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2A945077-5621-49F1-9E4A-2118EACBCF2B}|CharlieDobson_RevisedHealthSystem_Programming2\\CharlieDobson_RevisedHealthSystem_Programming2.csproj|solutionrelative:charliedobson_revisedhealthsystem_programming2\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2A945077-5621-49F1-9E4A-2118EACBCF2B}|CharlieDobson_RevisedHealthSystem_Programming2\\CharlieDobson_RevisedHealthSystem_Programming2.csproj|c:\\charlie\u0027s coding assigments\\charliedobson_revisedhealthsystem_programming2\\charliedobson_revisedhealthsystem_programming2\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{2A945077-5621-49F1-9E4A-2118EACBCF2B}|CharlieDobson_RevisedHealthSystem_Programming2\\CharlieDobson_RevisedHealthSystem_Programming2.csproj|C:\\Charlie\u0027s Coding Assigments\\CharlieDobson_RevisedHealthSystem_Programming2\\charliedobson_revisedhealthsystem_programming2\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{2A945077-5621-49F1-9E4A-2118EACBCF2B}|CharlieDobson_RevisedHealthSystem_Programming2\\CharlieDobson_RevisedHealthSystem_Programming2.csproj|solutionrelative:charliedobson_revisedhealthsystem_programming2\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2A945077-5621-49F1-9E4A-2118EACBCF2B}|CharlieDobson_RevisedHealthSystem_Programming2\\CharlieDobson_RevisedHealthSystem_Programming2.csproj|c:\\charlie\u0027s coding assigments\\charliedobson_revisedhealthsystem_programming2\\charliedobson_revisedhealthsystem_programming2\\health.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2A945077-5621-49F1-9E4A-2118EACBCF2B}|CharlieDobson_RevisedHealthSystem_Programming2\\CharlieDobson_RevisedHealthSystem_Programming2.csproj|solutionrelative:charliedobson_revisedhealthsystem_programming2\\health.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -23,12 +27,25 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "Player.cs",
+              "DocumentMoniker": "C:\\Charlie\u0027s Coding Assigments\\CharlieDobson_RevisedHealthSystem_Programming2\\CharlieDobson_RevisedHealthSystem_Programming2\\Player.cs",
+              "RelativeDocumentMoniker": "CharlieDobson_RevisedHealthSystem_Programming2\\Player.cs",
+              "ToolTip": "C:\\Charlie\u0027s Coding Assigments\\CharlieDobson_RevisedHealthSystem_Programming2\\CharlieDobson_RevisedHealthSystem_Programming2\\Player.cs",
+              "RelativeToolTip": "CharlieDobson_RevisedHealthSystem_Programming2\\Player.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAxwCYAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-09T15:55:17.406Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "Health.cs",
               "DocumentMoniker": "C:\\Charlie\u0027s Coding Assigments\\CharlieDobson_RevisedHealthSystem_Programming2\\CharlieDobson_RevisedHealthSystem_Programming2\\Health.cs",
               "RelativeDocumentMoniker": "CharlieDobson_RevisedHealthSystem_Programming2\\Health.cs",
               "ToolTip": "C:\\Charlie\u0027s Coding Assigments\\CharlieDobson_RevisedHealthSystem_Programming2\\CharlieDobson_RevisedHealthSystem_Programming2\\Health.cs",
               "RelativeToolTip": "CharlieDobson_RevisedHealthSystem_Programming2\\Health.cs",
-              "ViewState": "AgIAAA4AAAAAAAAAAAAwwCwAAAANAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-01-09T15:46:12.906Z",
               "EditorCaption": ""
