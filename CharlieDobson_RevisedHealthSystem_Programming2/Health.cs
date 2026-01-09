@@ -5,8 +5,8 @@ namespace CharlieDobson_RevisedHealthSystem_Programming2
     internal class Health
     {
         //Properties
-        int CurrentHealth { get; set; }
-        int MaxHealth { get; set; }
+        public int CurrentHealth { get;  private set; }
+        public int MaxHealth { get; private set; }
 
         //Constructor
         public Health(int maxHealth)
@@ -18,6 +18,7 @@ namespace CharlieDobson_RevisedHealthSystem_Programming2
         //Methods
         public void TakeDamage(int damageAmount)
         {
+            //Checks to see if Damage taken is below 0
             if(damageAmount < 0)
             {
                 Console.Write("WARNING! A player cannot take negative damage.");
@@ -29,12 +30,14 @@ namespace CharlieDobson_RevisedHealthSystem_Programming2
 
         public void Heal(int healAmount)
         {
+            //Checks to see if amount to be healed is below 0
             if (healAmount < 0)
             {
                 Console.Write("WARNING! A player cannot heal a negative amount.");
                 healAmount = 0;
             }
 
+            //checks to see if amount heal + the current health will heal over the max health
             if(healAmount + CurrentHealth > MaxHealth)
             {
                 CurrentHealth = MaxHealth;
@@ -47,6 +50,7 @@ namespace CharlieDobson_RevisedHealthSystem_Programming2
             
         }
 
+        //Restore current Health to it's max
         public void Restore()
         {
             CurrentHealth = MaxHealth;

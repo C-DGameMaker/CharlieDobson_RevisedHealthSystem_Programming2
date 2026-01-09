@@ -9,30 +9,34 @@ namespace CharlieDobson_RevisedHealthSystem_Programming2
     internal class Player
     {
         //Properties
+        public String Name { get; private set; }
 
-        String Name { get; set; }
-
-        Health PlayerHealth { get; set; }
-        Health PlayerShield { get; set; }
+        public Health PlayerHealth { get; private set; }
+        public Health PlayerShield { get; private set; }
 
         //Constructor
         public Player(string name, int maxHealth, int maxShield)
         {
             Name = name;
-            //PlayerHealth = maxHealth;
-            //PlayerShield = maxShield;
+            //Player health
+            //Player shield
         }
 
         //Methods
         public void TakeDamage(int damageAmount)
         {
-
+            //Checks to see if Damage taken is below 0
+            if (damageAmount < 0)
+            {
+                Console.Write("WARNING! A player cannot take negative damage.");
+                damageAmount = 0;
+            }
         }
 
         public string GetStatusString()
         {
-            string status;
-            if(PlayerHealth <= 0)
+            string status = "";
+            if (PlayerHealth.CurrentHealth <= 0)
             {
                 status = "Dead.";
             }
