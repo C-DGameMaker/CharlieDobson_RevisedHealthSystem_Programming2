@@ -18,8 +18,8 @@ namespace CharlieDobson_RevisedHealthSystem_Programming2
         public Player(string name, int maxHealth, int maxShield)
         {
             Name = name;
-            //Player Health
-            //Player shield
+            PlayerHealth = new Health(maxHealth);
+            PlayerShield = new Health(maxShield);
         }
 
         //Methods
@@ -32,6 +32,18 @@ namespace CharlieDobson_RevisedHealthSystem_Programming2
                 damageAmount = 0;
             }
 
+            if(damageAmount > PlayerShield.CurrentHealth)
+            {
+                int spillDamage = damageAmount - PlayerShield.CurrentHealth;
+
+                PlayerShield.TakeDamage(PlayerShield.CurrentHealth);
+
+                PlayerHealth.TakeDamage(spillDamage);
+            }
+            else
+            {
+                PlayerShield.TakeDamage(damageAmount);
+            }
 
         }
 
