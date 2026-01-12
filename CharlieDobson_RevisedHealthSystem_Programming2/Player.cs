@@ -54,7 +54,35 @@ namespace CharlieDobson_RevisedHealthSystem_Programming2
             {
                 status = "Dead.";
             }
-            return status;
+            else if(PlayerHealth.CurrentHealth <= (PlayerHealth.MaxHealth * 0.25) )
+            {
+                status = "Badly hurt.";
+            }
+            else if (PlayerHealth.CurrentHealth <= (PlayerHealth.MaxHealth * 0.5))
+            {
+                status = "Hurt.";
+            }
+            else if (PlayerHealth.CurrentHealth <= (PlayerHealth.MaxHealth * 0.75))
+            {
+                status = "Somewhat Healthy.";
+            }
+            else if (PlayerHealth.CurrentHealth < PlayerHealth.MaxHealth)
+            {
+                status = "Healthy.";
+            }
+            else
+            {
+                if(PlayerShield.CurrentHealth == PlayerShield.MaxHealth)
+                {
+                    status = "Perfect Shield and Health.";
+                }
+                else
+                {
+                    status = "Perfectly Healthy.";
+                }
+            }
+
+                return status;
         }
 
     }
