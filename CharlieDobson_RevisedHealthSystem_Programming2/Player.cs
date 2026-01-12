@@ -9,7 +9,7 @@ namespace CharlieDobson_RevisedHealthSystem_Programming2
     internal class Player
     {
         //Properties
-        public String Name { get; private set; }
+        public String Name { get; set; }
 
         public Health PlayerHealth { get; private set; }
         public Health PlayerShield { get; private set; }
@@ -18,7 +18,7 @@ namespace CharlieDobson_RevisedHealthSystem_Programming2
         public Player(string name, int maxHealth, int maxShield)
         {
             Name = name;
-            //Player health
+            //Player Health
             //Player shield
         }
 
@@ -31,6 +31,8 @@ namespace CharlieDobson_RevisedHealthSystem_Programming2
                 Console.Write("WARNING! A player cannot take negative damage.");
                 damageAmount = 0;
             }
+
+
         }
 
         public string GetStatusString()
