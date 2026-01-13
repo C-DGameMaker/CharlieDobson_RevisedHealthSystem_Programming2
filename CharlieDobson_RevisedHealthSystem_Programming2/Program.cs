@@ -2,29 +2,78 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 
 namespace CharlieDobson_RevisedHealthSystem_Programming2
 {
     internal class Program
     {
+        //statics based off of different classes
         public static Player player;
-
         public static Random rand;
+
+        //Static based off of bools
         public static bool isDead;
+        static bool correctKeyPress;
+
+        //Static based off keyboard input
+        static ConsoleKeyInfo input = default;
         static void Main(string[] args)
         {
             Console.Write("Enter a name for your Player: ");
             string name = Console.ReadLine();
 
             player = new Player(name: name, maxHealth: 100, maxShield: 50);
+            Console.WriteLine(" ");
             HUD();
             Console.ReadKey(true);
+            isDead = false;
 
-            while(isDead = false)
+            while(isDead == false)
             {
-                Console.WriteLine("Press 'D' to Damage, Press 'H' to Heal. Press 'R' to fully restore.");
-                
+                correctKeyPress = false;
+                input = default;
+                while(correctKeyPress == false)
+                {
+                    Console.Clear();
+                    HUD();
+                    Console.WriteLine("~~~~~~~~~~~~~~~~~~~~~~~~\n");
+                    Console.WriteLine("Press 'D' to Damage, Press 'H' to Heal. Press 'R' to fully restore.");
+                    input = Console.ReadKey(true);
+                    
+
+                    if(input.Key == ConsoleKey.D)
+                    {
+                        Console.Clear();
+                        Damage();
+                        correctKeyPress = true;
+                    }
+                    else if (input.Key == ConsoleKey.H)
+                    {
+                        Console.Clear();
+                        Heal();
+                        correctKeyPress = true;
+                    }
+                    else if (input.Key == ConsoleKey.R)
+                    {
+                        Console.Clear();
+                        Restore();
+                        correctKeyPress = true;
+                    }
+                    else
+                    {
+                        Console.Write("PLEASE INPUT CORRECT KEY!");
+                        Thread.Sleep(1000);
+                        Console.Clear();
+                    }
+                }
+
+                Console.WriteLine("You made it out of the loop");
+                Console.ReadKey(true);
+                Console.Clear();
+
+
             }
         }
 
@@ -36,5 +85,25 @@ namespace CharlieDobson_RevisedHealthSystem_Programming2
             Console.WriteLine($"Player Shield: {player.PlayerShield.CurrentHealth}/{player.PlayerShield.MaxHealth}");
 
         }
+
+        static void Damage()
+        {
+            int damage = rand.Next(1, 21);
+            player.TakeDamage(damage);
+
+        }
+
+        static void Heal()
+        {
+            int heal = rand.Next(1, 21);
+            player.PlayerHealth.TakeDamage(heal);
+        }
+
+        static void Restore()
+        {
+            player.PlayerShield.Restore();
+            player.PlayerHealth.Restore();
+        }
+
     }
 }
