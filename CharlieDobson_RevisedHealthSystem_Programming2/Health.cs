@@ -26,6 +26,11 @@ namespace CharlieDobson_RevisedHealthSystem_Programming2
             }
 
             CurrentHealth -= damageAmount;
+
+            if(CurrentHealth < 0)
+            {
+                CurrentHealth = 0;
+            }
         }
 
         public void Heal(int healAmount)

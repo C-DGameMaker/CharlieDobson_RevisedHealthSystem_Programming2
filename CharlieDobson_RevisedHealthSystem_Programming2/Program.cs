@@ -32,6 +32,7 @@ namespace CharlieDobson_RevisedHealthSystem_Programming2
 
             while(isDead == false)
             {
+                
                 correctKeyPress = false;
                 input = default;
                 while(correctKeyPress == false)
@@ -66,6 +67,11 @@ namespace CharlieDobson_RevisedHealthSystem_Programming2
                         Console.Write("PLEASE INPUT CORRECT KEY!");
                         Thread.Sleep(1000);
                         Console.Clear();
+                    }
+
+                    if (player.PlayerHealth.CurrentHealth == 0)
+                    {
+                        isDead = true;
                     }
                 }
 
