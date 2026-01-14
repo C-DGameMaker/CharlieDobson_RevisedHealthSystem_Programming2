@@ -11,7 +11,7 @@ namespace CharlieDobson_RevisedHealthSystem_Programming2
     {
         //statics based off of different classes
         public static Player player;
-        public static Random rand;
+        public static Random random = new Random();
 
         //Static based off of bools
         public static bool isDead;
@@ -69,18 +69,20 @@ namespace CharlieDobson_RevisedHealthSystem_Programming2
                         Console.Clear();
                     }
 
-                    if (player.PlayerHealth.CurrentHealth == 0)
-                    {
-                        isDead = true;
-                    }
+                    
                 }
 
-                Console.WriteLine("You made it out of the loop");
-                Console.ReadKey(true);
-                Console.Clear();
+                if (player.PlayerHealth.CurrentHealth == 0)
+                {
+                    isDead = true;
+                }
 
 
             }
+
+            Console.WriteLine("YOU DIED! Press any key to end the program.");
+            Console.ReadKey(true);
+            Console.Clear();
         }
 
         static void HUD()
@@ -92,19 +94,22 @@ namespace CharlieDobson_RevisedHealthSystem_Programming2
 
         }
 
+        //Runs take damage in the player class
         static void Damage()
         {
-            int damage = rand.Next(1, 21);
-            player.TakeDamage(damage);
+            int damageAmount = random.Next(1, 21);
+            player.TakeDamage(damageAmount);
 
         }
-
+         
+        //Runs heal on the player health, not the shield
         static void Heal()
         {
-            int heal = rand.Next(1, 21);
-            player.PlayerHealth.TakeDamage(heal);
+            int healAmount = random.Next(1, 21);
+            player.PlayerHealth.Heal(healAmount);
         }
-
+        
+        //Restores Health and shield to max
         static void Restore()
         {
             player.PlayerShield.Restore();
