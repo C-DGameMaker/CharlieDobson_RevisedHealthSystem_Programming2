@@ -74,7 +74,7 @@ namespace CharlieDobson_RevisedHealthSystem_Programming2
 
                 if (player.PlayerHealth.CurrentHealth == 0)
                 {
-                    isDead = true;
+                    isDead = false;
                 }
 
 

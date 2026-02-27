@@ -25,13 +25,6 @@ namespace CharlieDobson_RevisedHealthSystem_Programming2
         //Methods
         public void TakeDamage(int damageAmount)
         {
-            //Checks to see if Damage taken is below 0
-            if (damageAmount < 0)
-            {
-                Console.Write("WARNING! A player cannot take negative damage.");
-                damageAmount = 0;
-            }
-
             if(damageAmount > PlayerShield.CurrentHealth)
             {
                 int spillDamage = damageAmount - PlayerShield.CurrentHealth;
