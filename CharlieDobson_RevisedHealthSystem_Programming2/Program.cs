@@ -98,6 +98,7 @@ namespace CharlieDobson_RevisedHealthSystem_Programming2
         static void Damage()
         {
             int damageAmount = random.Next(1, 21);
+            damageAmount = damageAmount - (random.Next(1, 10));
             player.TakeDamage(damageAmount);
 
         }
